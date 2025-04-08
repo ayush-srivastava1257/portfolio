@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Srivastava - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Ayush Srivastava</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#about">About Me</a></li>
+            <li><a href="career.html">My Career</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="D:\VIT\WEBDEV_PROJECT\Ayush_Srivastava.pdf" download class="cv-download">
+                <i class="fas fa-file-download"></i> Download CV
+            </a></li>
+        </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-switch-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Home Section with Slideshow -->
+    <section id="home" class="home-section">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>My Career</h1>
+                    <p>I specialize in AI, computer networks, and web development, working on projects like Disha (AI-based indoor navigation) and Go-Back-N Flow Control in OMNeT++. Skilled in C++, Java, Python, and MATLAB, I focus on real-time congestion detection and network optimization.</p>
+                    <a href="career.html" class="explore-btn">Explore</a>
+                </div>
+                <img src="img_career.png" alt="My Career">
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Projects</h1>
+                    <p>I showcase AI, network simulations, and web development projects, including Disha (AI-based indoor navigation) and Go-Back-N Flow Control in OMNeT++, highlighting innovation and problem-solving.</p>
+                    <a href="projects.html" class="explore-btn">Explore</a>
+                </div>
+                <img src="img_project.webp" alt="projects">
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Join Our Community</h1>
+                    <p>A space for users to connect, share posts, like, and comment, fostering discussions on AI, web development, and technology trends.</p>
+                    <a href="community.html" class="explore-btn">Explore</a>
+                </div>
+                <img src="img_community.png" alt="Full Stack Development Slide">
+            </div>
+            <div class="slideshow-controls">
+                <button class="prev-slide">&lt;</button>
+                <button class="next-slide">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="Ayush.png" alt="Ayush Srivastava">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I'm Ayush Srivastava, a passionate AI & Web Developer with a knack for solving complex problems and creating innovative solutions. Currently studying at VIT Chennai, I specialize in machine learning, network simulations, and full-stack development. From building chatbots and congestion prediction models to designing storytelling-based websites, I love blending logic with creativity. When I'm not coding, you'll find me playing chess, cricket, reading books, watching anime, or strumming my guitar.</p>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>ML</span>
+                        <span>Deep Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Ayush Srivastava. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
