@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Srivastava - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Ayush Srivastava</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#about">About Me</a></li>
+            <li><a href="career.html">My Career</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-switch-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+
+<!-- Projects Section -->
+<section class="projects-section page-section">
+    <div class="section-header">
+        <h1>My Projects</h1>
+        <p>A showcase of my recent work and technical expertise</p>
+    </div>
+
+    <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+    </div>
+
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-item" data-category="web ui">
+            <div class="project-content">
+                <h3>Machine Learning-Based Real-Time Congestion Detection System</h3>
+                <p>Developed a real-time congestion detection system using deep learning and computer vision. The system captures images via a camera and estimates congestion levels by counting people in different density scenarios. It utilizes a CNN-based hybrid model, employing YOLOv8 for low-density crowd detection and CSRNet for high-density scenarios. A real-time image capture and processing pipeline was implemented using OpenCV, along with a dynamic switching mechanism to choose the appropriate model based on detected density. The model was optimized for limited computing resources, ensuring fast and accurate predictions, and was tested on Google Colab using datasets like ShanghaiTech and COCO.</p>
+                
+                <div class="project-tech">
+                    <span>Deep learning</span>
+                    <span>Computer Vision</span>
+                    <span>Congestion</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="Project1.png" alt="Project1">
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item" data-category="web ui">
+            <div class="project-content">
+                <h3>Indoor Positioning System for Optimal Navigation – VIT Chennai</h3>
+                <p>Implemented an AI-powered indoor positioning system that leverages real-time CCTV feedback to determine congestion levels and suggest the shortest or least time-consuming path within VIT Chennai. The system integrates a hybrid CNN model (YOLOv8 + CSRNet) to accurately count people in different areas, and a variable heuristic function was designed to consider both distance and congestion while computing optimal paths. The routing system was built using the A* algorithm, dynamically adapting to real-time congestion data to enhance navigation efficiency. Extensive testing was conducted to ensure scalability and reliability within large indoor environments.</p>
+                
+                <div class="project-tech">
+                    <span>Indoor Positioning System</span>
+                    <span>AI Powered</span>
+                    <span>A* algorithm</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="Project2.png" alt="Project2">
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item" data-category="ui">
+            <div class="project-content">
+                <h3>Adaptive Flow Control in Network Communication</h3>
+                <p>In this project, an adaptive flow control mechanism is implemented to enhance the efficiency of network communication. The system dynamically adjusts the packet-sending speed of the sender based on the feedback received from the receiver, such as network congestion levels and buffer status. By interpreting the feedback speed as an indicator of network congestion, the sender optimizes its sending rate to avoid network overloads, ensuring smoother communication and improved data throughput. The primary aim of this project is to simulate real-time network scenarios with multiple senders and a single receiver, allowing for the analysis of the adaptive sender's performance in maintaining stable data transfer rates under varying network conditions. The output of this simulation provides insights into how effective the adaptive flow control mechanism is in mitigating congestion and optimizing data flow.</p>
+                
+                <div class="project-tech">
+                    <span>Computer Network</span>
+                    <span>Communication</span>
+                    <span>Omnet++</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="Project3.png" alt="Dashboard UI Design">
+            </div>
+        </div>
+
+        
+</section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Ayush Srivastava. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
